@@ -1,0 +1,126 @@
+.products_filter_container {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.filter_form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 1rem;
+}
+
+.form_control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0.5rem auto;
+}
+
+.search_input {
+  padding: 0.5rem;
+  background: #f1f5f8;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  letter-spacing: 1.8px;
+  font-size: 1.1rem;
+  color: #6e6f71;
+  outline: none;
+}
+
+.search_input:focus-visible {
+  border: 2px solid #e95420;
+}
+
+.form_control h5 {
+  font-size: 1rem;
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+  padding: 0.25rem 0;
+  display: contents;
+  color: #102a42;
+  margin-bottom: 10px;
+}
+
+.form_control p {
+  font-size: 1rem;
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+  padding: 0.25rem 0;
+  color: #6e6f71;
+  margin: 0;
+}
+
+.form_control select {
+  background-color: #f1f5f8;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  padding: 0.25rem;
+  margin-top: 0.5rem;
+  letter-spacing: 1.8px;
+}
+
+.btn_filter {
+  width: fit-content;
+  text-align: left;
+  background-color: #ffff;
+  border: none;
+  box-shadow: none;
+  padding: 0.25rem 0;
+  text-transform: capitalize;
+  color: #617d98;
+}
+
+.btn_filter:link,
+.btn_filter:visited {
+  color: #617d98;
+}
+
+.btn_filter:hover,
+.btn_filter:active {
+  transform: scale(1);
+  text-decoration: underline;
+}
+
+.color_option {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.color_icon {
+  font-size: 1.1rem;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+.active_color {
+  border: 2px solid #e95420;
+  border-radius: 50%;
+}
+
+.btn_clear_filter {
+  text-transform: capitalize;
+  background-color: #bb2525 !important;
+  color: #fbf2f2;
+  padding: 0.25rem 0.5rem;
+}
+
+.form_control_inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.btn_color {
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  border-radius: 50%;
+}

@@ -1,0 +1,31 @@
+.arrange_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto auto;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.arrange_container p {
+  padding: 0 0.5rem;
+  color: #324d67;
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+}
+
+.arrange_container select {
+  background-color: #f1f5f8;
+  border-radius: 0.25rem;
+  border-color: transparent;
+  padding: 0.25rem;
+  letter-spacing: 1.8px;
+}
+
+.arrange_icon {
+  font-size: 1rem;
+}
+
+.arrange_line {
+  width: 100%;
+  color: #bcccdc;
+}

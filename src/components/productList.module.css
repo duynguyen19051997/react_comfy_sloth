@@ -1,0 +1,24 @@
+.products_container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.items_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+.items_list_view_container {
+  width: 100%;
+}
+
+@media screen and (width < 1440px) {
+  .items_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

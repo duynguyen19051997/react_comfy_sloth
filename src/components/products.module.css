@@ -1,0 +1,14 @@
+.products_container {
+  width: 60%;
+  margin: 5rem auto;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  min-height: 100vh;
+  height: auto;
+}
+
+@media screen and (width < 1500px) {
+  .products_container {
+    width: 80%;
+  }
+}

@@ -1,0 +1,31 @@
+.error_container {
+  width: 100%;
+  height: calc(-13.35rem + 100vh);
+  letter-spacing: 1.8px;
+  background-color: #eaded7;
+}
+
+.error_center {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.error_center h1 {
+  padding-top: 10rem;
+  color: #102a42;
+  font-size: 4rem;
+}
+
+.error_center p {
+  color: #102a42;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.btn_back {
+  background-color: #ab7a5f;
+  color: #eaded7;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}

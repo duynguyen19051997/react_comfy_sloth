@@ -1,0 +1,128 @@
+.services_container {
+  width: 100%;
+  min-height: 40vh;
+  height: auto;
+  background: linear-gradient(
+    to bottom,
+    #eaded7 0,
+    #eaded7 50%,
+    #ffffff 50%,
+    #ffffff 100%
+  );
+}
+
+.services_center {
+  width: 60%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.title {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 3rem;
+}
+
+.title h2 {
+  color: #453227;
+  font-size: 32px;
+  letter-spacing: 1.8px;
+  padding-right: 15rem;
+  text-transform: capitalize;
+}
+
+.title p {
+  color: #795744;
+  letter-spacing: 1.8px;
+  line-height: 28.8px;
+}
+
+.service_list {
+  width: 100%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+
+.contact_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.info_contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 3rem;
+}
+
+.info_contact p {
+  color: #617d98;
+  letter-spacing: 1.8px;
+  line-height: 28.8px;
+}
+
+.contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contact_form {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 0 auto;
+}
+
+.form_input {
+  color: #617d98;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #222222;
+  border-right: medium none;
+}
+
+.btn_contact {
+  background-color: #ab7a5f;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid #222222;
+  text-transform: capitalize;
+  letter-spacing: 1.8px;
+  border-bottom-right-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  transition: 0.3s all linear;
+  cursor: pointer;
+}
+
+.btn_contact:link,
+.btn_contact:visited {
+  background-color: #ab7a5f;
+}
+
+.btn_contact:hover,
+.btn_contact:active {
+  color: #ffff;
+}
+
+@media screen and (width < 1440px) {
+  .services_center {
+    width: 90%;
+  }
+}
+
+@media screen and (width < 1024px) {
+  .services_center {
+    width: 50%;
+  }
+  .info_contact,
+  .service_list,
+  .title {
+    display: flex;
+    flex-direction: column;
+  }
+}

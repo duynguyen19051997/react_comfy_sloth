@@ -1,0 +1,40 @@
+.service_item_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #c5a491;
+  border-radius: 0.25rem;
+}
+
+.service_icon {
+  font-size: 3rem;
+  padding-top: 2rem;
+}
+
+.service_item_container h4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #48352a;
+  font-size: 24px;
+  letter-spacing: 1.8px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.service_item_container p {
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 16px;
+  line-height: 28.8px;
+  letter-spacing: 1.8px;
+  color: #5f4435;
+}
+
+@media screen and (width < 1024px) {
+  .service_item_container {
+    margin-top: 2rem;
+  }
+}
