@@ -49,7 +49,10 @@ export const Header = (props) => {
               className={classes["btn_action"]}
               onClick={() => logout({ returnTo: window.location.origin })}
             >
-              Hi, {myUser.name}
+              Hi,
+              {myUser.name.length > 15
+                ? `${myUser.name.substring(0, 15)}...`
+                : myUser.name}
               <BsPersonDashFill className={classes["icon"]} />
             </button>
           ) : (
