@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import {
@@ -14,10 +14,8 @@ import {
 } from "./pages/index";
 
 import "./App.css";
-import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
-  const { user } = useAuth0();
   return (
     <div className="App">
       <AuthWrapper>
@@ -28,13 +26,7 @@ function App() {
           <Route path="/products/:productId" element={<ProductDetailPage />} />
           <Route exact path="/cart" element={<CartPage />} />
           <Route path="/about" element={<AboutPage />} />
-          <Route
-            exact
-            path="/checkout"
-            render={() => {
-              return user ? <CheckoutPage /> : <Navigate replace to="/" />;
-            }}
-          />
+          <Route exact path="/checkout" element={<CheckoutPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <Footer />

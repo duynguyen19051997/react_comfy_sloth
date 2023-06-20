@@ -1,0 +1,22 @@
+.stripe_checkout_container {
+  width: 60%;
+  margin: 0 auto;
+  min-height: 81vh;
+  height: auto;
+  text-align: center;
+}
+
+.stripe_checkout_container h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #627e98;
+  letter-spacing: 1.8px;
+}
+
+.continue_btn {
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 1.8px;
+  background-color: #ab7a5f;
+  color: #ffff;
+}

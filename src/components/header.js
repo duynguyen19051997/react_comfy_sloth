@@ -11,7 +11,7 @@ import { useCartContext } from "../contexts/cartContext";
 import { useUserContext } from "../contexts/userContext";
 
 export const Header = (props) => {
-  const { total_items } = useCartContext();
+  const { total_items, clearCart } = useCartContext();
   const { myUser, loginWithRedirect, logout } = useUserContext();
   return (
     <section className={classes["header"]}>
@@ -47,7 +47,10 @@ export const Header = (props) => {
           {myUser ? (
             <button
               className={classes["btn_action"]}
-              onClick={() => logout({ returnTo: window.location.origin })}
+              onClick={() => {
+                clearCart();
+                logout({ returnTo: window.location.origin });
+              }}
             >
               Hi,
               {myUser.name.length > 15
