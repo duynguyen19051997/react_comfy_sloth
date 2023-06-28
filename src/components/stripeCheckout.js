@@ -14,7 +14,9 @@ import { useUserContext } from "../contexts/userContext";
 import { formatPrice } from "../utils/helpers";
 import { Error } from "./error";
 
-const promise = loadStripe(process.env.REACT_APP_STRIPE_PUBLIC_KEY);
+const promise = loadStripe(
+  "pk_test_51NHh32JAgclup2X8Lzzm3V1zHPXX7oC94CGRnYWV3NfnEQqL4G0yn5EcDbh2Os2sBas5pGHTfeUw6LN1hKwMNc6F00Qa1icqX9"
+);
 
 const CheckoutForm = () => {
   const { cart, total_amount, shipping_fee, clearCart } = useCartContext();
