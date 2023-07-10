@@ -3,17 +3,36 @@
   margin: 0 auto;
   min-height: 81vh;
   height: auto;
-  text-align: center;
 }
 
-.stripe_checkout_container h2 {
-  text-align: center;
+.stripe_checkout_container article {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.stripe_checkout_container h4 {
   font-size: 1.5rem;
   color: #627e98;
   letter-spacing: 1.8px;
 }
 
-.continue_btn {
+.stripe_checkout_container p {
+  font-size: 1rem;
+  color: #627e98;
+  letter-spacing: 1.8px;
+}
+
+.stripe_checkout_container form {
+  width: 50%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.stripe_checkout_container form button {
+  margin-top: 2rem;
+}
+
+.pay_btn {
   text-transform: capitalize;
   font-size: 1rem;
   letter-spacing: 1.8px;
