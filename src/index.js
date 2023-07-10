@@ -12,7 +12,6 @@ import { UserProvider } from "./contexts/userContext";
 
 // Domain: dev-fjremgeh6qaet2b4.us.auth0.com
 // ClientId: 8BbYicX1ax2JPafTwbyLh5f3O4lxvaH3
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
