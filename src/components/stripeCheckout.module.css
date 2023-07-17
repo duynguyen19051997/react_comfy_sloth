@@ -39,3 +39,12 @@
   background-color: #ab7a5f;
   color: #ffff;
 }
+
+.center {
+  text-align: center;
+}
+
+.center h2 {
+  letter-spacing: 1.8px;
+  color: #627e98;
+}

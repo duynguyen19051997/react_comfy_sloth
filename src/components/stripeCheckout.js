@@ -127,7 +127,9 @@ export const StripeCheckout = (props) => {
   const { cart } = useCartContext();
 
   return (
-    <main className={classes["stripe_checkout_container"]}>
+    <main
+      className={`${classes["stripe_checkout_container"]} ${classes["center"]}`}
+    >
       {cart.length > 0 ? (
         <Elements stripe={promise}>
           <CheckoutForm />
@@ -135,7 +137,7 @@ export const StripeCheckout = (props) => {
       ) : (
         <>
           <h2>Your cart is empty</h2>
-          <Link to={"/products"} className={`btn ${classes["continue_btn"]}`}>
+          <Link to={"/products"} className={`btn ${classes["pay_btn"]}`}>
             Continue Shopping
           </Link>
         </>
